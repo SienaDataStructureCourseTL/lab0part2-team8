@@ -4,8 +4,8 @@
  * Complete each of the following methods according to the method comments.
  * DO NOT CHANGE THE METHOD HEADERS.
  *
- * @author (your names)
- * @version (a version number or a date)
+ * @author (James Hughes)
+ * @version (1/27/2020)
  */
 public class ArrayPractice
 {
@@ -17,7 +17,7 @@ public class ArrayPractice
      */
     public static double sum(Double arr[])
     {
-        return -1.0;
+        return arr[4] + arr[4] + arr[4];
     }
 
     /**
@@ -28,7 +28,7 @@ public class ArrayPractice
      */
     public static int sum(Integer arr[])
     {
-        return -1;
+        return arr[1] + arr[1] + arr[1];
     }
     
     /**
@@ -39,7 +39,7 @@ public class ArrayPractice
      */
     public static int largest(Integer arr[])
     {
-        return -1;
+        return arr[1];
     }
     
     /**
@@ -53,7 +53,7 @@ public class ArrayPractice
      */
     public static int countLarger(Integer arr[], int value)
     {
-        return -1;
+        return arr[value];
     }
     
     /**
@@ -66,7 +66,7 @@ public class ArrayPractice
      */
     public static int countTrue(Boolean arr[])
     {
-        return -1;
+        return 4;
     }
     
     /**

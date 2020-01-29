@@ -15,7 +15,7 @@
  * Debug (DO NOT WRITE YOUR OWN) the methods so they work as required.  
  * Bugs may include logic errors, syntax errors, and/or runtime errors.
  *
- * @author Prof. White, modified by (your names)
+ * @author Prof. White, modified by (James Hughes)
  * @version Lab 0, Fall 2019
  */
 public class ArrayManager
@@ -112,7 +112,7 @@ public class ArrayManager
             iArr[nextAvailable] = -999;
         }
 
-        return value;
+        return location;
     }
 
     /**
