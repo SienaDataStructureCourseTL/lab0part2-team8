@@ -50,11 +50,11 @@ public class ArrayPractice
     public static int largest(Integer arr[])
     {
         int largest = arr[0];
-        for(int n = 0; n < arr.length - 1; n++)
+        for(int n = 0; n < arr.length; n++)
         {
-            if(arr[n] < arr[n+1])
+            if(arr[n] > largest)
             {
-                largest = arr[n+1];
+                largest = arr[n];
             }
         }
         return largest;
