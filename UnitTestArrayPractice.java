@@ -1,10 +1,12 @@
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 /**
  * This class is used to perform a unit test on the
  * ArrayPractice class.  
  * 
  * DO NOT ALTER THIS CLASS UNTIL INSTRUCTED TO DO SO.  
  *
- * @author Prof. White, modified by (your names)
+ * @author Prof. White, modified by (Nathan Poirier)
  * @version Fall 2019
  */
 public class UnitTestArrayPractice
@@ -56,6 +58,28 @@ public class UnitTestArrayPractice
         System.out.print("Actual:    Lengths:  ");
         printArray(ArrayPractice.stringLengths(sArr));
         System.out.println("\n***End test ArrayPractice.stringLengths(String[])***\n");
+        
+        
+        Random gen = new Random();
+        Double[] dubArray = new Double[gen.nextInt(5) + 6];
+        Integer[] intArray = new Integer[gen.nextInt(5) + 6];
+        for(int n = 0; n < dubArray.length; n++)
+        {
+            Double randomNum = ThreadLocalRandom.current().nextDouble(-2.0, 2.0 + 1);
+            dubArray[n] = randomNum;
+        }
+        for(int n = 0; n < intArray.length; n++)
+        {
+            int randomNum = ThreadLocalRandom.current().nextInt(-10, 10 + 1);
+            intArray[n] = randomNum;
+        }
+        printArray(dubArray);
+        System.out.println("Sum: " + ArrayPractice.sum(dubArray));
+        printArray(intArray);
+        System.out.println("Sum: " + ArrayPractice.sum(intArray));
+        System.out.println("Larger: " + ArrayPractice.countLarger(intArray,intArray[0]));
+        System.out.println("Largest int: " + ArrayPractice.largest(intArray));
+        
     }
 
     /**
